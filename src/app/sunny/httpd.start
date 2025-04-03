@@ -1,0 +1,17 @@
+port = 8080
+cachedpool
+
+handle Time
+mount /time
+
+handle Echo
+mount /echo
+
+path = ~/Desktop
+handle File
+mount /file
+
+bind
+up
+end
+
