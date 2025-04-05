@@ -1,0 +1,41 @@
+[need Control System Calc List]
+
+[fun add [a b]
+  [= sum 0]
+  [ret [+ a b]]
+]
+
+[fun yn [a]
+  [if [a] [ret 'yes] [ret 'no]]
+]
+
+[pl 'testif]
+[if 0 [pl 'one] [pl 'none] ]
+[pl 'tested]
+
+[pl [lsc [o o o o]]]
+[pl "islist" "four elemnt list " 
+  [if [isls [o o o o]]
+    'yes
+    'no
+  ]
+]
+[pl 'islist '  [yn [isls o]]]
+
+[pl "Hello world!"]
+[pl sys.user.name]
+[pl [+ 2 3 [+ 7 8] ]]
+[pl [add 2 3]]
+[= a 10]
+[pl 'a: a ]
+[rep 5 [pl 'five]]
+[rep a
+  [= i 3]
+  [
+    [pl 'i: i ]
+    [++ i]
+  ]
+]
+[pl 'i: i]
+
+[exit]
